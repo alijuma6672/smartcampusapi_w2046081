@@ -18,30 +18,31 @@ Launch Instructions:
 
 
 Sample Curl Commands:
+(apipath changed my id from w2046081 to w2068081)
 
 1. Get API Discovery Metadata:**
    
-curl -X GET http://localhost:8080/w2046081_clientserver_cw/api/v1/
+curl -X GET http://localhost:8080/w2068081_clientserver_cw/api/v1/
 
 2. Create a new room
 
-curl -X POST http://localhost:8080/w2046081_clientserver_cw/api/v1/rooms 
+curl -X POST http://localhost:8080/w2068081_clientserver_cw/api/v1/rooms 
 -H "Content-Type: application/json" \
 -d '{"id":"LIB-301", "name":"Library Quiet Study", "capacity":50}'
 
 3. Get all rooms
 
-curl -X GET http://localhost:8080/w2046081_clientserver_cw/api/v1/rooms
+curl -X GET http://localhost:8080/w2068081_clientserver_cw/api/v1/rooms
 
 4. Register a new sensor to a room
 
-curl -X POST http://localhost:8080/w2046081_clientserver_cw/api/v1/sensors 
+curl -X POST http://localhost:8080/w2068081_clientserver_cw/api/v1/sensors 
 -H "Content-Type: application/json" \
 -d '{"id":"TEMP-001", "type":"Temperature", "status":"ACTIVE", "currentValue":22.5, "roomId":"LIB-301"}'
 
 5. Get sensors filtered by type
 
-curl -X GET "http://localhost:8080/w2046081_clientserver_cw/api/v1/sensors?type=Temperature"
+curl -X GET "http://localhost:8080/w2068081_clientserver_cw/api/v1/sensors?type=Temperature"
 
 
 
